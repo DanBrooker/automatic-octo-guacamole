@@ -4,6 +4,8 @@
 @import "fonts";
 @import "icons";
 
+// hacks, tidy up later
+
 figure.full-width {
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
@@ -33,5 +35,41 @@ footer {
         color: black;
       }
     }
+  }
+}
+
+.home {
+  .col-6 {
+    .card {
+      img {
+        height: 400px;
+      }
+    }
+  }
+
+  .card {
+
+    .card-title {
+      font-family: $font-family-serif;
+    }
+    .card-body {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    p {
+      font-size: 12px;
+    }
+    a {
+      color: black;
+      text-decoration: none;
+    }
+  }
+
+}
+
+.card {
+  img {
+    object-fit: cover;
+    height: 200px;
   }
 }
