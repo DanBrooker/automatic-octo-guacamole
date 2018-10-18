@@ -1,9 +1,7 @@
 backend:
-  name: gitlab
-  repo: appropo/marketing
+  name: github
+  repo: DanBrooker/automatic-octo-guacamole
   branch: master
-  auth_type: implicit
-  app_id: ee3a9185fe89214b865f2146b0d2c097a7298feb33d16f8f48864014e24dac29
 
 media_folder: "_assets/images"
 
