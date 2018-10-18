@@ -13,11 +13,17 @@ collections: # A list of collections the CMS should be able to edit
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields: # The fields each document in this collection have
-      - {label: "Layout", name: "layout", widget: "string", default: "article"}
+      - {label: "Layout", name: "layout", widget: "select", default: "article", options: ["article", "post"]}
       - {label: "Title", name: "title", widget: "string", tagname: "h1"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Topic", name: "categories", widget: "string", required: true}
       - {label: "Section", name: "section", widget: "string", required: true}
+      - label: "Contributors"
+        name: "contributor"
+        widget: "relation"
+        collection: "contributors"
+        searchFields: ["title"]
+        valueField: "title"
       - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD hh:mm:ss"}
       - {label: "Draft", name: "draft", widget: "boolean", default: true}
     meta: # Meta data fields. Just like fields, but without any preview element
@@ -27,12 +33,10 @@ collections: # A list of collections the CMS should be able to edit
     create: true
     fields: # The fields each document in this collection have
       - {label: "Layout", name: "layout", widget: "string", default: "contributor"}
-      - {label: "Name", name: "name", widget: "string", tagname: "h1"}
+      - {label: "Name", name: "title", widget: "string", tagname: "h1"}
+      - {label: "Summary", name: "summary", widget: "markdown"}
       - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Topic", name: "categories", widget: "string", required: true}
-      - {label: "Section", name: "section", widget: "string", required: true}
-      - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD hh:mm:ss"}
-      - {label: "Draft", name: "draft", widget: "boolean", default: true}
+
     meta: # Meta data fields. Just like fields, but without any preview element
   - label: "Pages"
     name: "pages"

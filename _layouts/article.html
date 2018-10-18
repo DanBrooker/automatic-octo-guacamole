@@ -21,12 +21,12 @@ layout: default
   <div class="row">
     <div class="col-2 text-center">
       {% for name in page.contributors %}
-        {% assign contributor = site.contributors | where:"name", name | first %}
+        {% assign contributor = site.contributors | where:"title", name | first %}
         {% if contributor %}
           {% if contributor.image %}
             {% asset {{contributor.image}} width=50 height=50 class="rounded-circle" %}
           {% endif %}
-          <p>{{contributor.name}}</p>
+          <p>{{contributor.title}}</p>
         {% else %}
           {% asset Contrib_PhilDooley_new.jpg width=50 height=50 class="rounded-circle" %}
           <p>{{name}}</p>
@@ -65,7 +65,7 @@ layout: default
         <hr>
         <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">
           {% for name in page.contributors %}
-            {% assign contributor = site.contributors | where:"name", name | first %}
+            {% assign contributor = site.contributors | where:"title", name | first %}
             {% if contributor %}
               <p>{{contributor.summary}}</p>
             {% else %}
