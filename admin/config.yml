@@ -27,7 +27,7 @@ collections: # A list of collections the CMS should be able to edit
     create: true
     fields: # The fields each document in this collection have
       - {label: "Layout", name: "layout", widget: "string", default: "contributor"}
-      - {label: "Title", name: "title", widget: "string", tagname: "h1"}
+      - {label: "Name", name: "name", widget: "string", tagname: "h1"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Topic", name: "categories", widget: "string", required: true}
       - {label: "Section", name: "section", widget: "string", required: true}
