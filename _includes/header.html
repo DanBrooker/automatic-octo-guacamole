@@ -1,0 +1,35 @@
+<nav class="navbar navbar-light navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand pr-2" href="/">
+      {% asset logo.png height=30 %}
+    </a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarToggle">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/blog">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about">About</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0" action="/search">
+
+        <div class="">
+          <input type="text" class="form-control" name="q" placeholder="Search..." aria-label="Search input" aria-describedby="basic-addon2">
+          <!-- <div class="input-group-append">
+            <button class="btn btn-outline-secondary" type="submit">Search</button>
+          </div> -->
+        </div>
+      </form>
+    </div>
+
+  </div>
+</nav>

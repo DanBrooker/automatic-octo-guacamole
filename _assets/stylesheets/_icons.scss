@@ -1,0 +1,56 @@
+.fa {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-size: 24px 24px;
+  background-repeat: no-repeat no-repeat;
+}
+
+.fa-search {
+  background-image: image-url('search.svg');
+}
+
+.fa-search-white {
+  background-image: image-url('search-white.svg');
+}
+
+.fa-envelope {
+  background-image: image-url('envelope.svg');
+}
+
+.fa-user {
+  background-image: image-url('user.svg');
+}
+
+.fa-globe {
+  background-image: image-url('globe.svg');
+}
+
+.fa-facebook {
+  background-image: image-url('facebook-f.svg');
+}
+
+.fa-twitter {
+  background-image: image-url('twitter.svg');
+}
+
+.fa-google-plus {
+  padding: 5px;
+  background-image: image-url('google-plus-square.svg');
+}
+
+.fa-rss {
+  background-image: image-url('rss.svg');
+}
+
+.fa-microphone {
+  background-image: image-url('microphone.svg');
+}
+
+.fa-pinterest-p {
+  background-image: image-url('pinterest-p.svg');
+}
+
+.fa-instagram {
+  background-image: image-url('instagram.svg');
+}

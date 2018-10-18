@@ -1,0 +1,25 @@
+---
+layout: page
+title: Blog
+---
+
+<div>
+  {% for post in paginator.posts %}
+    <div class="row">
+      <div class="col-4 col-sm-6 col-xs-12 pb-2">
+        {% include post.html post=post %}
+      </div>
+    </div>
+  {% endfor %}
+</div>
+
+<div class="btn-group mt-3 mb-3">
+  {% if paginator.previous_page %}
+    <a class="btn btn-primary" href="{{ paginator.previous_page_path }}" tabindex="-1">Older</a>
+  {% endif %}
+  {% if paginator.next_page %}
+    <a class="btn btn-primary" href="{{ paginator.next_page_path }}">Newer</a>
+  {% endif %}
+</div>
+
+<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>

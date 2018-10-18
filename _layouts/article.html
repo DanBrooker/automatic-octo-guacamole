@@ -1,0 +1,96 @@
+---
+layout: default
+---
+<article class="article container mt-3" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <div class="row justify-content-center mt-2">
+    <div class="col-12 col-md-8">
+      <header class="post-header">
+        <div class="mb-2">
+          <a href="/sections/{{page.section}}" class="text-muted">{{page.section | capitalize}}</a>
+          <a href="/topics/{{page.topic}}" class="text-muted">{{page.topic | capitalize}}</a>
+          <time class="" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+            {{ page.date | date: "%b %-d, %Y" }}
+          </time>
+        </div>
+        <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
+      </header>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-2 text-center">
+      {% for name in page.contributors %}
+        {% assign contributor = site.contributors | where:"name", name | first %}
+        {% if contributor %}
+          {% if contributor.image %}
+            {% asset {{contributor.image}} width=50 height=50 class="rounded-circle" %}
+          {% endif %}
+          <p>{{contributor.name}}</p>
+        {% else %}
+          {% asset Contrib_PhilDooley_new.jpg width=50 height=50 class="rounded-circle" %}
+          <p>{{name}}</p>
+        {% endif %}
+      {% endfor %}
+    </div>
+    <div class="col-8">
+      <p class="standfirst">
+        {{page.standfirst}}
+      </p>
+    </div>
+  </div>
+
+  <div class="row justify-content-center mt-2">
+    <div class="col-12 col-md-8">
+      {% if page.hero %}
+      <figure class="full-width">
+        <div class="container">
+          {% asset {{page.hero}} class="img-fluid" %}
+          <figcaption>
+            <div class="image-caption">{{page.hero-caption}}</div>
+            <div class="image-credit">CREDIT: {{page.hero-credit}}</div>
+          </figcaption>
+        </div>
+      </figure>
+      {% endif %}
+    </div>
+  </div>
+
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-8">
+      <div class="post-content e-content" itemprop="articleBody">
+        {{ content }}
+      </div>
+      <div>
+        <hr>
+        <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">
+          {% for name in page.contributors %}
+            {% assign contributor = site.contributors | where:"name", name | first %}
+            {% if contributor %}
+              <p>{{contributor.summary}}</p>
+            {% else %}
+              {{name}}
+            {% endif %}
+          {% endfor %}
+        </span>
+        <div>
+          Explore:
+          {% for tag in page.tags %}
+            <a href="tags/{{tag}}">#{{tag}}</a>
+          {% endfor %}
+        </div>
+      </div>
+    <div>
+  </div>
+
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-8">
+      <div class="row">
+        <div class="col">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+</article>

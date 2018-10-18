@@ -1,0 +1,56 @@
+@import "bootstrap-scss/functions";
+@import "variables";
+
+article {
+  font-family: $font-family-serif;
+
+  h1, p {
+    font-family: $font-family-serif;
+  }
+
+  h2, h3 {
+    font-family: $font-family-sans-serif;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  p {
+    line-height: 24px;
+  }
+
+  .standfirst {
+    font-family: $font-family-sans-serif;
+    font-size: 14px;
+  }
+
+  figure {
+    font-size: 12px;
+    font-family: $font-family-sans-serif;
+    .image-credit {
+
+    }
+    .image-caption {
+
+    }
+  }
+
+  blockquote {
+    font-family: $font-family-sans-serif;
+    font-style: italic;
+    font-size: 16px;
+    color: #373a3c;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
