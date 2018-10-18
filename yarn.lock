@@ -6,3 +6,8 @@ bootstrap-scss@4.1.3:
   version "4.1.3"
   resolved "https://registry.yarnpkg.com/bootstrap-scss/-/bootstrap-scss-4.1.3.tgz#a39929de0a46cabf89566b18477403260401fc4c"
   integrity sha512-WZndnzDpxSvMBu+tGUNpo9PkDfsSMoixmc3L9Jlebl5stwGjv5VP6Y6RLo+hCwADmplio+8hTac5b/G3Id428Q==
+
+lunr@^2.3.4:
+  version "2.3.4"
+  resolved "https://registry.yarnpkg.com/lunr/-/lunr-2.3.4.tgz#ecc045a48a6ecd96f1bb812fff70b33731753412"
+  integrity sha512-o0D846XyAlPkBMVK3ZgVYrLHho3yhJHgpm0BxZT3dGdFa+tpQwdQdI4EUihsmWz8Fr3aaux4eahO9Ih7Z3e1eQ==
