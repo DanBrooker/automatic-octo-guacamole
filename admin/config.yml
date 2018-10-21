@@ -54,6 +54,6 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Body, name: body, widget: markdown}
       - label: "Footer"
         name: "footer"
-        file: "includes/footer.html"
+        file: "_includes/footer.html"
         fields:
           - {label: Body, name: body, widget: html}
