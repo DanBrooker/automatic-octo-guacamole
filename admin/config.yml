@@ -22,9 +22,9 @@ collections: # A list of collections the CMS should be able to edit
         name: "hero"
         widget: "object"
         fields:
-        - {label: "Image", name: "hero", widget: "image"}
-        - {label: "Caption", name: "hero-caption", widget: "string"}
-        - {label: "Credit", name: "hero-credit", widget: "string"}
+          - {label: "Image", name: "hero-image", widget: "image"}
+          - {label: "Caption", name: "hero-caption", widget: "string"}
+          - {label: "Credit", name: "hero-credit", widget: "string"}
       - {label: "Section", name: "section", widget: "string", required: true}
       - {label: "Body", name: "standfirst", widget: "markdown"}
       - {label: "Standfirst", name: "body", widget: "markdown"}
@@ -35,7 +35,6 @@ collections: # A list of collections the CMS should be able to edit
         searchFields: ["title"]
         valueField: "title"
       - {label: "Layout", name: "layout", widget: "select", default: "article", options: ["article", "post"]}
-    meta: # Meta data fields. Just like fields, but without any preview element
   - name: "contibutor"
     label: "Contributor"
     folder: "_contributors"
@@ -56,8 +55,8 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Body, name: body, widget: markdown}
-      - label: "Footer"
-        name: "footer"
-        file: "_includes/footer.html"
-        fields:
-          - {label: Body, name: body, widget: text}
+      # - label: "Footer"
+      #   name: "footer"
+      #   file: "_includes/footer.html"
+      #   fields:
+      #     - {label: Body, name: body, widget: text}

@@ -42,10 +42,10 @@ layout: default
 
   <div class="row justify-content-center mt-2">
     <div class="col-12 col-md-8">
-      {% if page.hero %}
+      {% if page.hero-image %}
       <figure class="full-width">
         <div class="container">
-          {% asset {{page.hero}} class="img-fluid" %}
+          {% asset {{page.hero-image}} class="img-fluid" %}
           <figcaption>
             <div class="image-caption">{{page.hero-caption}}</div>
             <div class="image-credit">CREDIT: {{page.hero-credit}}</div>

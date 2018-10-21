@@ -2,7 +2,7 @@
 layout: article
 title: A short history of spacetime from Euclid to LIGO
 standfirst: A year ago today, the world learned that a huge team of scientists around the world had confirmed the existence of gravitational waves. Here, David Blair, from the Australian International Gravitational Research Centre, traces the long history of discovery that led to breakthrough.
-hero: 181017-waves-full.jpg
+hero-image: 181017-waves-full.jpg
 hero-caption: The discovery of gravitational waves marked an important step on a never-ending journey of discovery regarding the nature of the universe.
 hero-credit: sakkmesterke/Getty Images
 tags: LIGO, gravitational waves
