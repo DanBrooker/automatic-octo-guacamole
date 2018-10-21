@@ -2,9 +2,9 @@
 layout: article
 title: The physics of perfect pizza
 standfirst: Researchers have worked out why pizzas cooked in electric ovens never taste quite right. Phil Dooley reports.
-hero-image: 180706-pizza-full.jpg
-hero-caption: The relationship between radiant and conductive heat in a wood-fired oven is what ensures a perfect pizza.
-hero-credit: TIZIANA FABI/AFP/Getty Images
+hero_image: 180706-pizza-full.jpg
+hero_caption: The relationship between radiant and conductive heat in a wood-fired oven is what ensures a perfect pizza.
+hero_credit: TIZIANA FABI/AFP/Getty Images
 tags: temperature, pizza, conduction, heat
 contributors: Phil Dooley
 section: news
