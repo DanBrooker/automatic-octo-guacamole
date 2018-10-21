@@ -34,7 +34,7 @@ collections: # A list of collections the CMS should be able to edit
         collection: "contributors"
         searchFields: ["title"]
         valueField: "title"
-      - {label: "Tags", name: "tags", widget: "list"}
+      - {label: "Tags", name: "tags", widget: "string"}
       - {label: "Layout", name: "layout", widget: "select", default: "article", options: ["article", "post"]}
   - name: "contibutor"
     label: "Contributor"
