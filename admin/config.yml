@@ -18,9 +18,13 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Preview", name: "preview", widget: "image"}
       - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD hh:mm:ss"}
       - {label: "Draft", name: "draft", widget: "boolean", default: true}
-      - {label: "Hero", name: "hero", widget: "image"}
-      - {label: "Hero Caption", name: "hero-caption", widget: "string"}
-      - {label: "Hero Credit", name: "hero-credit", widget: "string"}
+      - label: "Hero"
+        name: "hero"
+        widget: "object"
+        fields:
+        - {label: "Image", name: "hero", widget: "image"}
+        - {label: "Caption", name: "hero-caption", widget: "string"}
+        - {label: "Credit", name: "hero-credit", widget: "string"}
       - {label: "Section", name: "section", widget: "string", required: true}
       - {label: "Body", name: "standfirst", widget: "markdown"}
       - {label: "Standfirst", name: "body", widget: "markdown"}
@@ -56,4 +60,4 @@ collections: # A list of collections the CMS should be able to edit
         name: "footer"
         file: "_includes/footer.html"
         fields:
-          - {label: Body, name: body, widget: html}
+          - {label: Body, name: body, widget: text}
